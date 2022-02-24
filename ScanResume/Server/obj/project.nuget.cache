@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sieMWxV1p4hvwKGfsmNBpmfFPHnjh3ynHKNHM88BQrYyTJ/elDDhKO1g+zkBAjHs5vcswliqVHhRUW+w64Ntog==",
+  "dgSpecHash": "S22jwXoKy9yBTuDkgLY27w+OqMeNFGvG4bZPnoQ/YUxXF6zc5WXZGwtkZJ4r2E365+pU/Ad1ifzNBnIibGYrNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\me\\RiderProjects\\Work Projects\\Real\\CV Resume\\FixedsumeReader\\ScanResume\\ScanResume\\Server\\ScanResume.Server.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,8 @@
     "C:\\Users\\me\\.nuget\\packages\\htmlagilitypack\\1.11.36\\htmlagilitypack.1.11.36.nupkg.sha512",
     "C:\\Users\\me\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\me\\.nuget\\packages\\itextsharp\\5.5.13.2\\itextsharp.5.5.13.2.nupkg.sha512",
+    "C:\\Users\\me\\.nuget\\packages\\majorsoft.blazor.components.common.jsinterop\\1.5.0\\majorsoft.blazor.components.common.jsinterop.1.5.0.nupkg.sha512",
+    "C:\\Users\\me\\.nuget\\packages\\majorsoft.blazor.components.maps\\1.5.0\\majorsoft.blazor.components.maps.1.5.0.nupkg.sha512",
     "C:\\Users\\me\\.nuget\\packages\\messagepack\\2.3.75\\messagepack.2.3.75.nupkg.sha512",
     "C:\\Users\\me\\.nuget\\packages\\messagepack.annotations\\2.3.75\\messagepack.annotations.2.3.75.nupkg.sha512",
     "C:\\Users\\me\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.14\\microsoft.aspnetcore.authorization.5.0.14.nupkg.sha512",
@@ -111,6 +113,7 @@
     "C:\\Users\\me\\.nuget\\packages\\python.deployment\\1.2.0\\python.deployment.1.2.0.nupkg.sha512",
     "C:\\Users\\me\\.nuget\\packages\\python.included\\3.7.3.13\\python.included.3.7.3.13.nupkg.sha512",
     "C:\\Users\\me\\.nuget\\packages\\pythonnet_netstandard_py37_win\\2.5.1\\pythonnet_netstandard_py37_win.2.5.1.nupkg.sha512",
+    "C:\\Users\\me\\.nuget\\packages\\restsharp\\107.2.1\\restsharp.107.2.1.nupkg.sha512",
     "C:\\Users\\me\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\me\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\me\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

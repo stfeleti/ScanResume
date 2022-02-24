@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32210.238
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanResume.Server", "ScanResume\Server\ScanResume.Server.csproj", "{6B74E10D-40FE-4F2F-9660-99A9C59CAC35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanResume.Client", "ScanResume\Client\ScanResume.Client.csproj", "{BEC95E5F-0E23-4C27-A058-5FECC255BD60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScanResume.Client", "ScanResume\Client\ScanResume.Client.csproj", "{BEC95E5F-0E23-4C27-A058-5FECC255BD60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanResume.Shared", "ScanResume\Shared\ScanResume.Shared.csproj", "{5BF5B489-D21C-450C-8547-4DF4F9C51792}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScanResume.Shared", "ScanResume\Shared\ScanResume.Shared.csproj", "{5BF5B489-D21C-450C-8547-4DF4F9C51792}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

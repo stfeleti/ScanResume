@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v5.0": {
       "ScanResume.Shared/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.14"
+          "Microsoft.AspNetCore.Components.Web": "5.0.14",
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "ScanResume.Shared.dll": {}
@@ -129,6 +130,14 @@
           }
         }
       },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
       "System.IO.Pipelines/5.0.1": {
         "runtime": {
           "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
@@ -228,6 +237,13 @@
       "sha512": "sha512-b4DqLhUIptBH/XW4+kDkeFwpDnHCOVJmscQPWT8CN6tmC/kFdCaC4LDLXUjW6FkmGLu1A9eHvztDwnVDKVLyBw==",
       "path": "microsoft.jsinterop/5.0.14",
       "hashPath": "microsoft.jsinterop.5.0.14.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
     "System.IO.Pipelines/5.0.1": {
       "type": "package",

@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[12.11.0-beta.3, )"
             },
+            "Majorsoft.Blazor.Components.Maps": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[5.0.14, )"
@@ -62,6 +66,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.14, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[107.2.1, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",
@@ -154,6 +166,10 @@
             "Catalyst.Spacy": {
               "target": "Package",
               "version": "[1.0.23175, )"
+            },
+            "Majorsoft.Blazor.Components.Maps": {
+              "target": "Package",
+              "version": "[1.5.0, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.Server": {
               "target": "Package",
@@ -265,6 +281,10 @@
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
               "version": "[5.0.14, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

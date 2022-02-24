@@ -34,6 +34,7 @@
       "ScanResume.Server/1.0.0": {
         "dependencies": {
           "Catalyst.Spacy": "1.0.23175",
+          "Majorsoft.Blazor.Components.Maps": "1.5.0",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "5.0.14",
           "Microsoft.CodeAnalysis.Common": "4.2.0-1.final",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.12",
@@ -453,6 +454,40 @@
         },
         "compile": {
           "lib/itextsharp.dll": {}
+        }
+      },
+      "Majorsoft.Blazor.Components.Common.JsInterop/1.5.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.14"
+        },
+        "runtime": {
+          "lib/net5.0/Majorsoft.Blazor.Components.Common.JsInterop.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Majorsoft.Blazor.Components.Common.JsInterop.dll": {}
+        }
+      },
+      "Majorsoft.Blazor.Components.Maps/1.5.0": {
+        "dependencies": {
+          "Majorsoft.Blazor.Components.Common.JsInterop": "1.5.0",
+          "Microsoft.AspNetCore.Components.Web": "5.0.14"
+        },
+        "runtime": {
+          "lib/net5.0/Majorsoft.Blazor.Components.Core.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
+          },
+          "lib/net5.0/Majorsoft.Blazor.Components.Maps.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Majorsoft.Blazor.Components.Core.dll": {},
+          "lib/net5.0/Majorsoft.Blazor.Components.Maps.dll": {}
         }
       },
       "MessagePack/2.3.75": {
@@ -1896,6 +1931,20 @@
           "lib/netstandard2.0/Python.Runtime.dll": {}
         }
       },
+      "RestSharp/107.2.1": {
+        "dependencies": {
+          "System.Text.Json": "5.0.2"
+        },
+        "runtime": {
+          "lib/net5.0/RestSharp.dll": {
+            "assemblyVersion": "107.2.1.0",
+            "fileVersion": "107.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/RestSharp.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -3172,7 +3221,10 @@
       "ScanResume.Client/1.0.0": {
         "dependencies": {
           "Azure.Storage.Blobs": "12.11.0-beta.3",
+          "Majorsoft.Blazor.Components.Maps": "1.5.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.14",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "107.2.1",
           "ScanResume.Shared": "1.0.0",
           "System.Net.Http.Json": "5.0.0",
           "Tewr.Blazor.FileReader": "3.3.1.21360"
@@ -3186,7 +3238,8 @@
       },
       "ScanResume.Shared/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.14"
+          "Microsoft.AspNetCore.Components.Web": "5.0.14",
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "ScanResume.Shared.dll": {}
@@ -4892,6 +4945,20 @@
       "path": "itextsharp/5.5.13.2",
       "hashPath": "itextsharp.5.5.13.2.nupkg.sha512"
     },
+    "Majorsoft.Blazor.Components.Common.JsInterop/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1nYC8x1F+ek5QFQoiynPWgg2fuRNDP5NUFQ4ZdH2kvU4np5FPOlxJnHHdRjC18iACJinHMuuXIk4gvnNz67nxg==",
+      "path": "majorsoft.blazor.components.common.jsinterop/1.5.0",
+      "hashPath": "majorsoft.blazor.components.common.jsinterop.1.5.0.nupkg.sha512"
+    },
+    "Majorsoft.Blazor.Components.Maps/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9kom8wZPqftR2rLCwJgJB7uIeo/dqcG3EWQY2sRqdpgB/S/4W1f/1svHcTiTIPAT47MoM1FIkaMgqAJQIGJw9Q==",
+      "path": "majorsoft.blazor.components.maps/1.5.0",
+      "hashPath": "majorsoft.blazor.components.maps.1.5.0.nupkg.sha512"
+    },
     "MessagePack/2.3.75": {
       "type": "package",
       "serviceable": true,
@@ -5577,6 +5644,13 @@
       "sha512": "sha512-RMsXNGdWfq8eCSmrA/lWXXiB2j8fT/IkXANTtAh7z0jN9ydN5JJQ+EGdAw8g+GvG4WBxEjyv4TUqDERuMN826Q==",
       "path": "pythonnet_netstandard_py37_win/2.5.1",
       "hashPath": "pythonnet_netstandard_py37_win.2.5.1.nupkg.sha512"
+    },
+    "RestSharp/107.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xp8r5DHdepfGQASgptR6EyKi6V9EdXcOCsTSy0/Pyn5e1zDvpJ1ZJccaK9tBx/Wboov9MFgp7RO1g31mw7GZzQ==",
+      "path": "restsharp/107.2.1",
+      "hashPath": "restsharp.107.2.1.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

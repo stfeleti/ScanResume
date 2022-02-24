@@ -1,6 +1,8 @@
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\ScanResume.Client.StaticWebAssets.xml
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\appsettings.json
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\nlp_model\meta.json
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\nlp_model\vocab\strings.json
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\BlazorDebugProxy\BrowserDebugHost.dll
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\BlazorDebugProxy\BrowserDebugProxy.dll
@@ -28,6 +30,9 @@ C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResum
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\HtmlAgilityPack.dll
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\Humanizer.dll
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\itextsharp.dll
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\Majorsoft.Blazor.Components.Common.JsInterop.dll
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\Majorsoft.Blazor.Components.Core.dll
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\Majorsoft.Blazor.Components.Maps.dll
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\MessagePack.dll
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\MessagePack.Annotations.dll
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
@@ -238,9 +243,8 @@ C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResum
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\obj\Debug\net5.0\ScanResume.Server.Views.pdb
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\obj\Debug\net5.0\ScanResume.Server.csproj.CopyComplete
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\obj\Debug\net5.0\ScanResume.Server.dll
-C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\obj\Debug\net5.0\ref\ScanResume.Server.dll
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\obj\Debug\net5.0\refint\ScanResume.Server.dll
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\obj\Debug\net5.0\ScanResume.Server.pdb
 C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\obj\Debug\net5.0\ScanResume.Server.genruntimeconfig.cache
-C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\obj\Debug\net5.0\refint\ScanResume.Server.dll
-C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\nlp_model\meta.json
-C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\nlp_model\vocab\strings.json
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\obj\Debug\net5.0\ref\ScanResume.Server.dll
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Server\bin\Debug\net5.0\RestSharp.dll

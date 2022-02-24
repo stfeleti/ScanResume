@@ -14,7 +14,10 @@ using Azure;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.JSInterop;
+using Newtonsoft.Json;
 using ScanResume.Shared;
+using RestSharp;
+using ScanResume.Shared.Models;
 
 
 namespace ScanResume.Client.Pages
@@ -29,23 +32,26 @@ namespace ScanResume.Client.Pages
         private bool FileNotDropped = true;
 
         private string ResumeResult;
+        protected ResponseModel Result;
 
 
         private FileModel FileModel { get; set; } = new();
+
         private async Task HandleSelected(InputFileChangeEventArgs e)
         {
             ResumeResult = null;
-            //progressBar = 10.ToString("0");
+            progressBar = 0.ToString("0");
+            DropInstructions =
+                new StringBuilder("Drag your files here or click in this area.");
             FileModel.File = e.File;
             FileNotDropped = !FileNotDropped;
             DropInstructions = new StringBuilder($"{FileModel.File.Name}");
 
-            var buffers = new byte[ FileModel.File.Size];
-            await  FileModel.File.OpenReadStream(1476485 ).ReadAsync(buffers);
+            var buffers = new byte[FileModel.File.Size];
+            await FileModel.File.OpenReadStream(1476485).ReadAsync(buffers);
             FileBytes = buffers;
-            string imageType =  FileModel.File.ContentType;
+            string imageType = FileModel.File.ContentType;
             fileUrl = $"data:{imageType};base64,{Convert.ToBase64String(buffers)}";
-            
         }
 
 
@@ -62,7 +68,8 @@ namespace ScanResume.Client.Pages
                                   "upload" + "/" + inputFile.Name);
 
 
-            AzureSasCredential credential = new AzureSasCredential("sp=racwdli&st=2022-02-22T14:05:44Z&se=2022-02-27T22:05:44Z&sv=2020-08-04&sr=c&sig=D2E7KI550agfvYwMgRRzBlxfwqBAFV5WEe5WRbKnRTo%3D");
+            AzureSasCredential credential = new AzureSasCredential(
+                "sp=racwdli&st=2022-02-22T14:05:44Z&se=2022-02-27T22:05:44Z&sv=2020-08-04&sr=c&sig=D2E7KI550agfvYwMgRRzBlxfwqBAFV5WEe5WRbKnRTo%3D");
             BlobClient blobClient = new BlobClient(blobUri, credential, new BlobClientOptions());
             //displayProgress = true;
 
@@ -82,28 +89,39 @@ namespace ScanResume.Client.Pages
             DropInstructions = new StringBuilder($"Successfully Uploaded {FileModel.File.Name}");
             FileModel.FileUrl = blobUri;
             //fileUrl = blobUri.AbsoluteUri;
-            using (var httpClient = new HttpClient())
+            if (Convert.ToInt32(progressBar) == 100)
             {
-                using (var request = new HttpRequestMessage(new HttpMethod("POST"), "https://localhost:5001/api/BlobFileUpload"))
+                // var content = new StringContent($"\"{blobUri.ToString()}\"");
+                //
+                // var resp = await _client.PostAsync("api/BlobFileUpload", content);
+                //
+                // ResumeResult = await resp.Content.ReadAsStringAsync();
+                //
+                // Console.WriteLine(resp.Content.ToString());
+                // Console.WriteLine(ResumeResult);
+                
+                using (var httpClient = new HttpClient())
                 {
-                    request.Headers.TryAddWithoutValidation("accept", "text/plain"); 
+                    using (var request = new HttpRequestMessage(new HttpMethod("POST"), "https://localhost:5001/api/BlobFileUpload"))
+                    {
+                        request.Headers.TryAddWithoutValidation("accept", "text/plain"); 
 
-                    request.Content = new StringContent("\"https://amafilewam.blob.core.windows.net/upload/resume-sample.pdf\"");
-                    request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json"); 
+                        request.Content = new StringContent($"\"https://amafilewam.blob.core.windows.net/upload/{inputFile.Name}\"");
+                        request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json"); 
 
-                    var response = await httpClient.SendAsync(request);
+                        var response = await httpClient.SendAsync(request);
 
-                    ResumeResult = await response.Content.ReadAsStringAsync();
-                    DropInstructions = new("Done!!");
+                        ResumeResult = await response.Content.ReadAsStringAsync();
+                        DropInstructions = new("Done!!");
+                    }
                 }
             }
         }
-        
-        
-       
+
+
         private async Task ShowWarning(string message)
         {
-            await  js.InvokeVoidAsync("alert", message);
+            await js.InvokeVoidAsync("alert", message);
         }
 
         private async Task UploadFiles(EditContext arg)
@@ -115,8 +133,7 @@ namespace ScanResume.Client.Pages
             }
 
             DropInstructions = new($"Uploading file: {FileModel.File.Name}");
-            await SendToBlob( FileModel.File);
-            
+            await SendToBlob(FileModel.File);
         }
     }
 }

@@ -117,6 +117,45 @@
           "lib/itextsharp.dll": {}
         }
       },
+      "Majorsoft.Blazor.Components.Common.JsInterop/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.3"
+        },
+        "compile": {
+          "lib/net5.0/Majorsoft.Blazor.Components.Common.JsInterop.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Majorsoft.Blazor.Components.Common.JsInterop.dll": {}
+        },
+        "build": {
+          "buildTransitive/Majorsoft.Blazor.Components.Common.JsInterop.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Majorsoft.Blazor.Components.Common.JsInterop.props": {}
+        }
+      },
+      "Majorsoft.Blazor.Components.Maps/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Majorsoft.Blazor.Components.Common.JsInterop": "1.5.0",
+          "Microsoft.AspNetCore.Components.Web": "5.0.3"
+        },
+        "compile": {
+          "lib/net5.0/Majorsoft.Blazor.Components.Core.dll": {},
+          "lib/net5.0/Majorsoft.Blazor.Components.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Majorsoft.Blazor.Components.Core.dll": {},
+          "lib/net5.0/Majorsoft.Blazor.Components.Maps.dll": {}
+        },
+        "build": {
+          "buildTransitive/Majorsoft.Blazor.Components.Maps.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Majorsoft.Blazor.Components.Maps.props": {}
+        }
+      },
       "MessagePack/2.3.75": {
         "type": "package",
         "dependencies": {
@@ -1672,6 +1711,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Python.Runtime.dll": {}
+        }
+      },
+      "RestSharp/107.2.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/RestSharp.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -3663,7 +3714,10 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Azure.Storage.Blobs": "12.11.0-beta.3",
+          "Majorsoft.Blazor.Components.Maps": "1.5.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.14",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "107.2.1",
           "ScanResume.Shared": "1.0.0",
           "System.Net.Http.Json": "5.0.0",
           "Tewr.Blazor.FileReader": "3.3.1.21360"
@@ -3679,7 +3733,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.14"
+          "Microsoft.AspNetCore.Components.Web": "5.0.14",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/ScanResume.Shared.dll": {}
@@ -3865,6 +3920,68 @@
         "lib/iTextSharp.xml",
         "lib/itextsharp.dll",
         "notice.txt"
+      ]
+    },
+    "Majorsoft.Blazor.Components.Common.JsInterop/1.5.0": {
+      "sha512": "1nYC8x1F+ek5QFQoiynPWgg2fuRNDP5NUFQ4ZdH2kvU4np5FPOlxJnHHdRjC18iACJinHMuuXIk4gvnNz67nxg==",
+      "type": "package",
+      "path": "majorsoft.blazor.components.common.jsinterop/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "blazor.components.png",
+        "build/Majorsoft.Blazor.Components.Common.JsInterop.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Majorsoft.Blazor.Components.Common.JsInterop.props",
+        "buildTransitive/Majorsoft.Blazor.Components.Common.JsInterop.props",
+        "lib/net5.0/Majorsoft.Blazor.Components.Common.JsInterop.dll",
+        "majorsoft.blazor.components.common.jsinterop.1.5.0.nupkg.sha512",
+        "majorsoft.blazor.components.common.jsinterop.nuspec",
+        "staticwebassets/Majorsoft.Blazor.Components.Common.JsInterop.bundle.scp.css",
+        "staticwebassets/click.js",
+        "staticwebassets/click.min.js",
+        "staticwebassets/clipboard.js",
+        "staticwebassets/clipboard.min.js",
+        "staticwebassets/colorTheme.js",
+        "staticwebassets/colorTheme.min.js",
+        "staticwebassets/elementInfo.js",
+        "staticwebassets/elementInfo.min.js",
+        "staticwebassets/focus.js",
+        "staticwebassets/focus.min.js",
+        "staticwebassets/geo.js",
+        "staticwebassets/geo.min.js",
+        "staticwebassets/globalMouseEvents.js",
+        "staticwebassets/globalMouseEvents.min.js",
+        "staticwebassets/head.js",
+        "staticwebassets/head.min.js",
+        "staticwebassets/lang.js",
+        "staticwebassets/lang.min.js",
+        "staticwebassets/resize.js",
+        "staticwebassets/resize.min.js",
+        "staticwebassets/scroll.js",
+        "staticwebassets/scroll.min.js"
+      ]
+    },
+    "Majorsoft.Blazor.Components.Maps/1.5.0": {
+      "sha512": "9kom8wZPqftR2rLCwJgJB7uIeo/dqcG3EWQY2sRqdpgB/S/4W1f/1svHcTiTIPAT47MoM1FIkaMgqAJQIGJw9Q==",
+      "type": "package",
+      "path": "majorsoft.blazor.components.maps/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "blazor.components.png",
+        "build/Majorsoft.Blazor.Components.Maps.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Majorsoft.Blazor.Components.Maps.props",
+        "buildTransitive/Majorsoft.Blazor.Components.Maps.props",
+        "lib/net5.0/Majorsoft.Blazor.Components.Core.dll",
+        "lib/net5.0/Majorsoft.Blazor.Components.Maps.dll",
+        "majorsoft.blazor.components.maps.1.5.0.nupkg.sha512",
+        "majorsoft.blazor.components.maps.nuspec",
+        "staticwebassets/googleMaps.js",
+        "staticwebassets/googleMaps.min.js"
       ]
     },
     "MessagePack/2.3.75": {
@@ -6404,6 +6521,24 @@
         "lib/netstandard2.0/Python.Runtime.xml",
         "pythonnet_netstandard_py37_win.2.5.1.nupkg.sha512",
         "pythonnet_netstandard_py37_win.nuspec"
+      ]
+    },
+    "RestSharp/107.2.1": {
+      "sha512": "xp8r5DHdepfGQASgptR6EyKi6V9EdXcOCsTSy0/Pyn5e1zDvpJ1ZJccaK9tBx/Wboov9MFgp7RO1g31mw7GZzQ==",
+      "type": "package",
+      "path": "restsharp/107.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.dll",
+        "lib/net5.0/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.107.2.1.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -11367,6 +11502,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Catalyst.Spacy >= 1.0.23175",
+      "Majorsoft.Blazor.Components.Maps >= 1.5.0",
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 5.0.14",
       "Microsoft.CodeAnalysis.Common >= 4.2.0-1.final",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.12",
@@ -11438,6 +11574,10 @@
           "Catalyst.Spacy": {
             "target": "Package",
             "version": "[1.0.23175, )"
+          },
+          "Majorsoft.Blazor.Components.Maps": {
+            "target": "Package",
+            "version": "[1.5.0, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly.Server": {
             "target": "Package",
