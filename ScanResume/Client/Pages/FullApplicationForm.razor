@@ -1,0 +1,183 @@
+﻿@page "/fullapplicationform"
+
+<style>
+    form {
+        height: 10vh;
+        width: 100%;
+        transition: all .3s ease;
+    }
+
+    .form {
+        height: 5vh;
+        width: 40vw;
+        padding: 10px;
+        border: 4px dashed rgba(255,255,255, 0.35);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .form label {
+            line-height: 100%;
+            width: 100%;
+            text-align: center;
+            color: #ffffff;
+            font-family: Arial,serif;
+        }
+
+        .form input {
+            display: none;
+        }
+
+   
+
+        form button:hover {
+            border: 2px solid rgba( 255, 255, 255, 0.18 );
+            color: white;
+        }
+
+        form button:active {
+            border: 0;
+        }
+
+    .preview-resume {
+        width: 40vw;
+        height: 68vh;
+        background: rgba(255, 255, 255, 0.16);
+        border-radius: 4px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.1px);
+        -webkit-backdrop-filter: blur(2.1px);
+        border: 1px solid rgba(255, 255, 255, 0.68);
+    }
+
+    .line {
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateX(-1px);
+    }
+
+    .left{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    pre{
+    color: white;
+    }
+    .result{
+        height: 80vh;
+        width: 100%;
+        overflow-y: auto;
+       
+        background: rgba(255, 255, 255, 0.09);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.5px);
+        -webkit-backdrop-filter: blur(2.5px);
+        border: 1px solid rgba(255, 255, 255, 0.51);
+    }
+    
+    
+/*stepped bar styling start*/
+.multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
+	 content: counter(stepNum);
+	 font-family: inherit;
+	 font-weight: 700;
+}
+
+ .multi-steps > li.is-active:after, .multi-steps > li.is-active ~ li:after {
+	 background: rgba(255, 255, 255, 0.45);
+}
+ .multi-steps {
+	 display: table;
+	 table-layout: fixed;
+	 width: 100%;
+}
+ .multi-steps > li {
+	 counter-increment: stepNum;
+	 text-align: center;
+	 display: table-cell;
+	 position: relative;
+	 color: #36304a;
+   
+}
+
+ .multi-steps > li:before {
+	 content: '\f00c';
+      content: '\2713;';
+      content: '\10003';
+      content: '\10004';
+      content: '\2713';
+	 display: block;
+	 margin: 0 auto 4px;
+	 background-color: #fff;
+	 width: 36px;
+	 height: 36px;
+	 line-height: 32px;
+	 text-align: center;
+background: rgba(255, 255, 255, 0.7);
+border-radius:50%;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(13.9px);
+-webkit-backdrop-filter: blur(13.9px);
+border: 1px solid rgba(255, 255, 255, 0.7);
+   
+   font-weight: 900;
+}
+ .multi-steps > li:after {
+	 content: '';
+	 height: 2px;
+	 width: 100%;
+	 background-color: #fff;
+	 position: absolute;
+	 top: 16px;
+	 left: 50%;
+	 z-index: -1;
+}
+ .multi-steps > li:last-child:after {
+	 display: none;
+}
+
+ .multi-steps > li.is-active:before {
+	 
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+   color: green;
+}
+ .multi-steps > li.is-active ~ li {
+	 color: #808080;
+}
+ .multi-steps > li.is-active ~ li:before {
+    background: rgba(255, 255, 255, 0.26);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+ 
+</style>
+
+<div class="container-fluid h-100  row">
+    <div class="container-fluid h-20">
+        <ul class="list-unstyled multi-steps">
+            <li>Upload Resume</li>
+            <li>Personal Details</li>
+            <li class="is-active">Educational Details</li>
+            <li>Work History</li>
+            <li>Summary</li>
+        </ul>
+    </div>
+    <div class="container-fluid overflow-auto h-80">
+        <FileUpload></FileUpload>
+    </div>
+</div>

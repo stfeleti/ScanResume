@@ -1,0 +1,12 @@
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\bin\Debug\net5.0\ScanResume.Shared.deps.json
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\bin\Debug\net5.0\ScanResume.Shared.dll
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\bin\Debug\net5.0\ScanResume.Shared.pdb
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\obj\Debug\net5.0\ScanResume.Shared.csproj.AssemblyReference.cache
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\obj\Debug\net5.0\ScanResume.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\obj\Debug\net5.0\ScanResume.Shared.AssemblyInfoInputs.cache
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\obj\Debug\net5.0\ScanResume.Shared.AssemblyInfo.cs
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\obj\Debug\net5.0\ScanResume.Shared.csproj.CoreCompileInputs.cache
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\obj\Debug\net5.0\ScanResume.Shared.dll
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\obj\Debug\net5.0\ref\ScanResume.Shared.dll
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\obj\Debug\net5.0\ScanResume.Shared.pdb
+C:\Users\me\RiderProjects\Work Projects\Real\CV Resume\FixedsumeReader\ScanResume\ScanResume\Shared\obj\Debug\net5.0\refint\ScanResume.Shared.dll

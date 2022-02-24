@@ -1,0 +1,71 @@
+﻿@page "/uploadfile"
+@layout EmptyLayout
+@inject IJSRuntime js
+@inject HttpClient _client
+<style>
+     form button {
+            margin-top: 5px;
+            color: #fff;
+            
+            width: 40vw;
+            height: 35px;
+            border-radius: 4px;
+            transition: all .2s ease;
+            outline: none;
+            z-index: 3;
+            background: linear-gradient(41deg, rgba(0, 188, 174, 1) @DivideBar(progressBar, 10)%,  rgba(211, 91, 201,1) @progressBar%, rgba( 255, 255, 255, 0 ) @progressBar%);
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset, 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 19.5px );
+            -webkit-backdrop-filter: blur( 19.5px );
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+</style>
+<div class="left col-6">
+    <div class="preview-plane">
+        @if (!string.IsNullOrEmpty(fileUrl))
+        {
+            <object class="preview-resume" data="@fileUrl" type="application/pdf" width="100%" height="100%">
+                <p>
+                    It appears you don't have a PDF plugin for this browser.
+                    No biggie... you can
+                    <a href="@fileUrl">
+                        click here to
+                        download the PDF file.
+                    </a>
+                </p>
+            </object>
+        }
+        <EditForm Model="@FileModel" OnSubmit="UploadFiles">
+            <div class="form">
+                <InputFile OnChange="@HandleSelected" multiple id="drop"/>
+                <label for="drop">@DropInstructions.ToString()</label>
+            </div>
+            <button type="submit">Upload</button>
+        </EditForm>
+
+        @* <input type="file" @ref="_input" @onchange="NewHandleSelected" accept=".pdf"/> *@
+    </div>
+
+</div>
+@if (ResumeResult != null)
+{
+    <div class="right col-6">
+        <div class="result overflow-auto">
+            <pre>@ResumeResult</pre>
+        </div>
+    </div>
+}
+
+
+
+
+@code {
+
+    private string DivideBar(string progress, int val)
+    {
+        var result = Convert.ToInt32(progress) / val;
+
+        return result.ToString("0");
+    }
+
+}
