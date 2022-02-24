@@ -31,7 +31,7 @@ namespace ScanResume.Server.Controllers
     {
         [HttpGet]
         [Produces("application/json")]
-        public async Task<string> Test()
+        public async Task<IActionResult> Test()
         {
             StringBuilder output = new StringBuilder("Running python\n");
             Console.WriteLine();
@@ -66,7 +66,7 @@ namespace ScanResume.Server.Controllers
             dynamic nlp_model = spacy.load("nlp_model");
             Installer.PipInstallModule("PyMuPDF");
             dynamic fitz = PythonEngine.ImportModule("fitz");
-
+            
             
             
             dynamic fname =
@@ -82,14 +82,15 @@ namespace ScanResume.Server.Controllers
 
             dynamic doc = nlp_model(text.ToString());
             StringBuilder res = new StringBuilder();
-
+            
             foreach (dynamic ent in doc.ents)
             {
                 res.Append($"->label = {ent.label_.upper()} ->Text = {ent.text.ToString()}");
             }
-
-            return res.ToString();
-            return $"{text.ToString()}";
+            dynamic json = PythonEngine.ImportModule("json");
+            dynamic json_result = json.dumps(res);
+            return json_result;
+            
             
             // using (Py.GIL())
             // {
