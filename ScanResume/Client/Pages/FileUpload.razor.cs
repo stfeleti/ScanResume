@@ -44,7 +44,7 @@ namespace ScanResume.Client.Pages
             DropInstructions =
                 new StringBuilder("Drag your files here or click in this area.");
             FileModel.File = e.File;
-            FileNotDropped = !FileNotDropped;
+            FileNotDropped = false;
             DropInstructions = new StringBuilder($"{FileModel.File.Name}");
 
             var buffers = new byte[FileModel.File.Size];
